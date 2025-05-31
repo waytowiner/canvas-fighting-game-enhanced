@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fight Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="stylesheet" href="./src/language-switch.css" />
+  </head>
+  <body>
+    <header>
+      <div class="playerHealthBar">
+        <div id="playerHealth"></div>
+      </div>
+      <div class="game-info">
+        <div id="timer"></div>
+        <div id="roundInfo"></div>
+        <div id="scoreInfo">
+          <span id="playerScore">0</span> - <span id="enemyScore">0</span>
+        </div>
+      </div>
+      <div class="enemyHealthBar">
+        <div id="enemyHealth"></div>
+      </div>
+    </header>
+    <div id="gameStatus"></div>
+    <div id="finalResult" style="display: none;">
+      <div class="final-content">
+        <div id="finalImage"></div>
+        <div id="finalText"></div>
+        <button id="restartButton"></button>
+      </div>
+    </div>
+    <div id="countdown" style="display: none;">
+      <div id="countdownNumber"></div>
+    </div>
+    <canvas></canvas>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
